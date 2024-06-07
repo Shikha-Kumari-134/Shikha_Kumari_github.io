@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kumari Shikha | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  /* margin-left: 10px; */
+  border-radius: 50%;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+#certifications-section {
+	padding-bottom: 100px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Kumari Shikha</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url('images/New images/website image.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Kumari Shikha</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student  ',
+						'Emerging AI Talent  ',
+						'Generative AI Explorer  ',
+						// 'PG in AI  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Aspiring AI Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/kumari-shikha-a4a07a215/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Shikha-Kumari-134" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/New images/about me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Kumari Shikha</span></p>
+										<p><span class="title-s">Qualification: </span> <span>MSc AI</span></p>
+										<p><span class="title-s">Experience: </span> <span>8 months</span></p>
+										<p><span class="title-s">Address: </span> <span>Maharashtra, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>AI</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Generative AI</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Highly motivated and detail-oriented postgraduate with a Master's degree in Artificial Intelligence. Possesing strong skills in 
+									machine learning, data analysis and algorithm development, with hands-on experience from academic projects and industry internships.
+									Eager to apply expertise in AI to solve real-world problems and contribute to innovative advancements in technology.
+								</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Post Graduate in Artificial Intelligence</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>AI , ML , NLP </span></li>
+									<li class="d-flex"><span>Education:</span> <span>Mater Of Science - AI</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+									<li class="d-flex"><span>Other Skills:</span> <span>Communication, Problem-Solving &amp; Leadership </span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Music, Cooking, Travelling</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Exploring cutting-edge AI and Machine learning Technologies | Harnessing the power of Intelligent systems for tomorrow's solutions.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Apr 2024 - May 2024</span>
+						<h2>Artificial Intelligence Intern</h2>
+						<span class="position">Internship studio</span>
+						<p class="mt-4">Internship studio is an online training and internship platform. Internship Studio also offers internships in 40+ domains like Artificial Intelligence, Machine Learning etc
+							<ul>
+								<li>Completed a self-paced AI course andDeveloped a face recognition system utilising principal component analysis and artificial neural networks.</li>
+								<li>Achieved an accuracy of 74% through testing and optimisation, gained practical experience in machine learning techniques and project management.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Sep 2023 - Dec 2023</span>
+						<h2>TCS iON RIO-125</h2>
+						<span class="position">TCS-iON</span>
+						<p class="mt-4">TCS iON is a strategic unit of Tata Consultancy Services focused on Manufacturing Industries (SMB), Educational Institutions and Examination Boards.
+							<ul>
+								<li>Completed a remote internship at TCS iON, contributing to a project focused on automating emotion analysis in textual comments and feedback.</li>
+								<li>Utilized natural language processing (NLP) techniques to develop an efficient system for emotion categorization within text.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Oct 2021 - Dec 2021</span>
+						<h2>Machine Learning Intern</h2>
+						<span class="position">TCR Innovation</span>
+						<p class="mt-4">Bridging the gap between Students and their knowledge in industrial field & bringing them a step closer to their Dream.
+							<ul>
+								<li>Participated in live classes during a two-month ML internship at TCR Innovation.</li>
+								<li>Independently developed machine learning projects on "Loan Status Prediction" and "Heart Disease Prediction</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022 - 2024</span>
+    					<h2>Master of Science- AI</h2>
+    					<span class="position">B.K.Birla College of Arts,Science and Commerce</span>
+    					<p class="mt-4">Graduating in July 2024</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019 - 2022</span>
+    					<h2>Bachelor of Science- IT</h2>
+    					<span class="position">B.K.Birla College of Arts,Science and Commerce</span>
+    					<p class="mt-4">GPA - 9.82</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1u2pJqQ-OpMtlYrMEAV_lzfUztu_M-0z5/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Some of my academic and personal projects. </p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Shikha-Kumari-134/Twitter-Sentiment-Analysis" class="block-20 zoom-effect" style="background-image: url('images/New images/Sentiment.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Shikha-Kumari-134/Twitter-Sentiment-Analysis">Twitter Sentiment Analysis</a></h3>
+                <p>Developed a Twitter Sentiment Analysis tool using Python and the Tweepy library to fetch tweets. Implemented natural language processing techniques with the NLTK library to analyze and classify the sentiment of tweets as positive, negative, or neutral. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Shikha-Kumari-134/Handwritten_Character_Recognition" class="block-20 zoom-effect" style="background-image: url('images/New images/character.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Shikha-Kumari-134/Handwritten_Character_Recognition">Handwritten Character recognition</a></h3>
+                <p>A Handwritten Character Recognition web application to detect the characters inside the image. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Shikha-Kumari-134/Automate-Emotion-Analysis" class="block-20 zoom-effect" style="background-image: url('images/New images/Emotions.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Shikha-Kumari-134/Automate-Emotion-Analysis">Emotion Analysis of textual comments and feedbacks</a></h3>
+                <p>Emotion Analysis web application to classify text data into various emotional categories, such as joy, anger, sadness, and surprise, providing insights into the emotional tone of the content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Shikha-Kumari-134/Forged-Or-Not" class="block-20 zoom-effect" style="background-image: url('images/New images/Detection.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Shikha-Kumari-134/Forged-Or-Not">Image Forgery Detection</a></h3>
+				  <p>Forged-Or-Not web application to check whether an image is authentic or has been tampered</p>
+				</div>
+			  </div>
+			</div>
+			<!-- <div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div> -->
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pb" id="certifications-section" style="margin-bottom: 100px;">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certifications</h1>
+					<h2 class="mb-4">Certifications</h2>
+					<p>Some of my key certifications in the field of AI and related technologies.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="certification-list">
+						<li>
+							<h2 class="heading"><a href="https://www.linkedin.com/learning/certificates/0112f0a750d6e5f06a851d2603ab7f8a5d1d0e8ab67d81555513112d06e12421?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BSkC8I3XvSL2L3PsMCcQL2A%3D%3D">Generative AI : The evolution of thoughtful online search</a></h2>
+							<span class="date">May 2024</span>
+							<span class="position">LinkedIn (Offered by Microsoft) </span>
+						</li>
+	
+						<li>
+							<h2 class="heading">  <a href="https://courses.cognitiveclass.ai/certificates/41afadbf588843409efa9e6b965233ef">Prompt Engineering for everyone </a></h2>
+							<span class="date">May 2024</span>
+							<span class="position">Cognitive Class (Offered by IBM)</span>
+						</li>
+	
+						<li>
+							<h2 class="heading"> <a href="https://www.linkedin.com/learning/certificates/28a57d7a324ed12c9d008ba9a843ecd3805308c4e83fd2b70e8e5eafc43ed203?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BBDcUs0KPTRGbmuUb9%2FsBNQ%3D%3D">What is Generative AI </a></h2>
+							<span class="date">May 2024</span>
+							<span class="position">LinkedIn (Offered by Microsoft)</span>
+						</li>
+	
+						<li>
+							<h2 class="heading"> <a href="https://www.cloudskillsboost.google/public_profiles/436ea454-42fe-4f8f-9d38-0815a53e3984/badges/8769186?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">Introduction to Large Language Models</a></h2>
+							<span class="date">April 2024</span>
+							<span class="position">Google cloud Skills Boost</span>
+						</li>
+	
+						<li>
+							<h2 class="heading"> <a href="https://www.kaggle.com/learn/certification/shikhakumari13498/intro-to-machine-learning">Introduction to Machine Learning</a></h2>
+							<span class="date">November 2022</span>
+							<span class="position">Kaggle</span>
+						</li>
+	
+						<li>
+							<h2 class="heading"> <a href="https://simpli-web.app.link/e/KD56GbBniJb">Natural Language Processing</a></h2>
+							<span class="date">November 2021</span> 
+							<span class="position">Simplilearn</span>
+						</li>
+	
+						<li>
+							<h2 class="heading"> <a href="https://simpli-web.app.link/e/afaFuMtniJb">Introduction to Artificial Intelligence</a></h2>
+							<span class="date">November 2021</span>
+							<span class="position">Simplilearn</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url('images/New images/bg_1.jpg'); padding-top: 150px; ">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Shikha-Kumari-134" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Mumbai,Maharashta, India</p>
+	          </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center"> -->
+          		<!-- <div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div> -->
+          		<!-- <h3 class="mb-4">Contact Number</h3>
+	            <p><a href="8740088558">8740088558</a></p> -->
+	          <!-- </div>
+          </div> -->
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="shikhakumari13498@gmail.com">shikhakumari13498@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1u2pJqQ-OpMtlYrMEAV_lzfUztu_M-0z5/view?usp=sharing">resumelink</a></p>
+	        </div>
+          </div>
+
+		    <div class="container">
+			<!-- <br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div> --> 
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/kumari-shikha-a4a07a215/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://x.com/Shikhak13498?s=08"><span class="icon-twitter"></span></a></li>
+					   <li class="ftco-animate"><a href="https://www.instagram.com/shikha13498?igsh=MTlncWNsendoYXUwYg=="><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
